@@ -1,0 +1,72 @@
+/* Movie card styles */
+.movie-card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures the overlay doesn't overflow the card */
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 200px; /* Fixed width for movie cards */
+    position: relative; /* Positioning for the overlay */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.movie-poster {
+    position: relative; /* Positioning for the overlay */
+}
+
+.movie-poster img {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid #4a90e2; /* Blue border at the bottom */
+}
+
+.movie-overlay {
+    position: absolute; /* Positioning for the overlay */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Fade effect */
+}
+
+.movie-card:hover .movie-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.favorite-btn {
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    color: #ffffff; /* White color for the button */
+    font-size: 2rem; /* Larger size for the heart icon */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s; /* Transition for scaling effect */
+}
+
+.favorite-btn:hover {
+    transform: scale(1.2); /* Slightly enlarge the button on hover */
+}
+
+.movie-info {
+    padding: 1rem;
+    text-align: center; /* Center text */
+}
+
+.movie-info h3 {
+    font-size: 1.2rem; /* Title size */
+    margin: 0.5rem 0; /* Margin for spacing */
+    color: #333; /* Dark text color */
+}
+
+.movie-info p {
+    font-size: 0.9rem; /* Release date size */
+    color: #666; /* Lighter text color */
+}

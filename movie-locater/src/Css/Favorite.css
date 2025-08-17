@@ -1,0 +1,23 @@
+/* Favorite component styles */
+.favorite {
+    background-color: #fff8dc; /* Light golden background */
+    border: 2px solid #d4af37; /* Goldish border */
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem auto; /* Center the div */
+    width: 80%; /* Responsive width */
+    max-width: 600px; /* Max width for larger screens */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorite h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.favorite p {
+    font-size: 1rem;
+    color: #666;
+}
